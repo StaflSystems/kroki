@@ -24,7 +24,7 @@ publishDockerImages:
 ifndef RELEASE_VERSION
 	$(error RELEASE_VERSION is undefined)
 endif
-	docker buildx bake -f docker-bake.hcl -f docker-bake-release.hcl kroki companion-images --push --set "*.platform=linux/arm64,linux/amd64"
+	docker buildx bake -f docker-bake.hcl -f docker-bake-release.hcl kroki --push --set "*.platform=linux/arm64,linux/amd64"
 
 smokeTests:
 	TAG=smoketests docker buildx bake kroki companion-images --load --set "*.cache-from=$(CACHE_FROM)" --set "*.cache-to=$(CACHE_TO)"
