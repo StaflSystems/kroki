@@ -2,21 +2,21 @@ variable "RELEASE_VERSION" {
 }
 
 target "kroki" {
-  tags = ["yuzutech/kroki:${RELEASE_VERSION}", "yuzutech/kroki:latest"]
+  tags = ["StaflSystems/kroki:${RELEASE_VERSION}", "StaflSystems/kroki:latest"]
 }
 
 target "kroki-mermaid" {
-  tags = ["yuzutech/kroki-mermaid:${RELEASE_VERSION}", "yuzutech/kroki-mermaid:latest"]
+  tags = ["StaflSystems/kroki-mermaid:${RELEASE_VERSION}", "StaflSystems/kroki-mermaid:latest"]
 }
 
 target "kroki-bpmn" {
-  tags = ["yuzutech/kroki-bpmn:${RELEASE_VERSION}", "yuzutech/kroki-bpmn:latest"]
+  tags = ["StaflSystems/kroki-bpmn:${RELEASE_VERSION}", "StaflSystems/kroki-bpmn:latest"]
 }
 
 target "kroki-excalidraw" {
-  tags = ["yuzutech/kroki-excalidraw:${RELEASE_VERSION}", "yuzutech/kroki-excalidraw:latest"]
+  tags = ["StaflSystems/kroki-excalidraw:${RELEASE_VERSION}", "StaflSystems/kroki-excalidraw:latest"]
 }
 
 target "kroki-diagramsnet" {
-  tags = ["yuzutech/kroki-diagramsnet:${RELEASE_VERSION}", "yuzutech/kroki-diagramsnet:latest"]
+  tags = ["StaflSystems/kroki-diagramsnet:${RELEASE_VERSION}", "StaflSystems/kroki-diagramsnet:latest"]
 }
