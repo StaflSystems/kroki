@@ -10,7 +10,7 @@ target "oci-labels" {
   labels = {
     "org.opencontainers.image.description" = "Kroki provides a unified API supporting multiple diagramming formats, making it easy to create diagrams from textual descriptions."
     "org.opencontainers.image.url" = "https://kroki.io"
-    "org.opencontainers.image.source" = "https://github.com/ghcr.io/staflsystems/kroki"
+    "org.opencontainers.image.source" = "https://github.com/staflsystems/kroki"
     "org.opencontainers.image.licenses" = "MIT"
   }
 }

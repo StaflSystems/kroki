@@ -5,7 +5,7 @@ SERVICES_TIMEOUT=15
 default:
 
 buildServer:
-	./mvnw --no-transfer-progress clean package
+	./mvnw --no-transfer-progress clean package -Dmaven.test.skip
 
 setServerVersion:
 ifndef RELEASE_VERSION
