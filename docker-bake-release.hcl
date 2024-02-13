@@ -2,21 +2,21 @@ variable "RELEASE_VERSION" {
 }
 
 target "kroki" {
-  tags = ["StaflSystems/kroki:${RELEASE_VERSION}", "StaflSystems/kroki:latest"]
+  tags = ["staflsystems/kroki:${RELEASE_VERSION}", "staflsystems/kroki:latest"]
 }
 
 target "kroki-mermaid" {
-  tags = ["StaflSystems/kroki-mermaid:${RELEASE_VERSION}", "StaflSystems/kroki-mermaid:latest"]
+  tags = ["staflsystems/kroki-mermaid:${RELEASE_VERSION}", "staflsystems/kroki-mermaid:latest"]
 }
 
 target "kroki-bpmn" {
-  tags = ["StaflSystems/kroki-bpmn:${RELEASE_VERSION}", "StaflSystems/kroki-bpmn:latest"]
+  tags = ["staflsystems/kroki-bpmn:${RELEASE_VERSION}", "staflsystems/kroki-bpmn:latest"]
 }
 
 target "kroki-excalidraw" {
-  tags = ["StaflSystems/kroki-excalidraw:${RELEASE_VERSION}", "StaflSystems/kroki-excalidraw:latest"]
+  tags = ["staflsystems/kroki-excalidraw:${RELEASE_VERSION}", "staflsystems/kroki-excalidraw:latest"]
 }
 
 target "kroki-diagramsnet" {
-  tags = ["StaflSystems/kroki-diagramsnet:${RELEASE_VERSION}", "StaflSystems/kroki-diagramsnet:latest"]
+  tags = ["staflsystems/kroki-diagramsnet:${RELEASE_VERSION}", "staflsystems/kroki-diagramsnet:latest"]
 }
