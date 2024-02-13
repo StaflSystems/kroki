@@ -3,7 +3,7 @@ variable "TAG" {
 }
 
 group "companion-images" {
-  targets = ["kroki-mermaid", "kroki-bpmn", "kroki-excalidraw", "kroki-diagramsnet"]
+  targets = []
 }
 
 target "oci-labels" {
@@ -30,41 +30,5 @@ target "kroki" {
   inherits = ["oci-labels"]
   labels = {
     "org.opencontainers.image.title" = "Kroki"
-  }
-}
-
-target "kroki-mermaid" {
-  context = "mermaid"
-  tags = ["ghcr.io/staflsystems/kroki-mermaid:${TAG}"]
-  inherits = ["oci-labels"]
-  labels = {
-    "org.opencontainers.image.title" = "Kroki - Mermaid"
-  }
-}
-
-target "kroki-bpmn" {
-  context = "bpmn"
-  tags = ["ghcr.io/staflsystems/kroki-bpmn:${TAG}"]
-  inherits = ["oci-labels"]
-  labels = {
-    "org.opencontainers.image.title" = "Kroki - BPMN"
-  }
-}
-
-target "kroki-excalidraw" {
-  context = "excalidraw"
-  tags = ["ghcr.io/staflsystems/kroki-excalidraw:${TAG}"]
-  inherits = ["oci-labels"]
-  labels = {
-    "org.opencontainers.image.title" = "Kroki - Excalidraw"
-  }
-}
-
-target "kroki-diagramsnet" {
-  context = "diagrams.net"
-  tags = ["ghcr.io/staflsystems/kroki-diagramsnet:${TAG}"]
-  inherits = ["oci-labels"]
-  labels = {
-    "org.opencontainers.image.title" = "Kroki - diagrams.net"
   }
 }
